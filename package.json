@@ -1,0 +1,45 @@
+{
+	"name": "sls-restapi-dynamodb",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"serve": "node .build/src/app.js",
+		"start": "npm run build && npm run serve",
+		"watch": "tsc-watch --onSuccess \"npm run serve\"",
+		"build": "tsc"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@hapi/joi": "^17.1.1",
+		"@koa/cors": "^3.1.0",
+		"@types/aws-sdk": "^2.7.0",
+		"@types/dotenv": "^8.2.0",
+		"@types/hapi__joi": "^17.1.4",
+		"@types/koa": "^2.11.3",
+		"@types/koa-mount": "^4.0.0",
+		"@types/koa-router": "^7.4.1",
+		"@types/koa__cors": "^3.0.1",
+		"aws-sdk": "^2.737.0",
+		"dotenv": "^8.2.0",
+		"koa": "^2.13.0",
+		"koa-body": "^4.2.0",
+		"koa-mount": "^4.0.0",
+		"koa-router": "^9.1.0",
+		"koa-static": "^5.0.0",
+		"reflect-metadata": "^0.1.13",
+		"serverless-http": "^2.5.0",
+		"swagger-jsdoc": "^3.5.0",
+		"swagger-ui-koa": "0.0.1"
+	},
+	"devDependencies": {
+		"serverless-deployment-bucket": "^1.1.2",
+		"serverless-dotenv-plugin": "^2.4.2",
+		"serverless-layers": "^2.2.4",
+		"serverless-plugin-typescript": "^1.1.9",
+		"tsc-watch": "^4.2.9",
+		"typescript": "^3.9.7"
+	}
+}
